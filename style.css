@@ -226,7 +226,7 @@ h2{
     
 }
 .about-main-div a:hover {
-    background: black;
+    background: #17171B;
     border: 1px #ff4b33 solid;
     color:#ff4b33 ;
     transform: translateY(-10px);
