@@ -1315,6 +1315,9 @@ h2{
     }
     .about-text h1 span{
         font-size: 52px;
+        font-family: monospace ;
+        text-shadow: 3px 3px 0 #ff4b33;
+    letter-spacing: 2px;
     }
     .about-text h2{
         font-size: 23px;
