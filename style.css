@@ -426,7 +426,7 @@ h2{
     position: absolute;
     left: -9px;
     
-    content: "";
+    content:"";
     border: 2px solid #ff4d5a;
     background: #ff4d5a;
 }
