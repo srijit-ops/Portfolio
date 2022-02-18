@@ -578,7 +578,96 @@ h2{
 .skill-container .skills-info .skill-name:hover span {
     transform: translateY(0) scale(2);
 }
-
+.project_row_1{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.project_card{
+    border: 1px solid #333;
+    border-radius: 6px;
+    width: 35%;
+    position: relative;
+    overflow: hidden;
+}
+.project-img{
+    width: 100%;
+    height: 220px;
+    /* min-height: 100%; */
+    display: block;
+    opacity: 1;
+    transition: all 0.3s;
+}
+.figurecap .captionbox{
+    background-color: #ff5b43;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /*position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+    transition: all 0.3s;
+}
+.figurecap .captionbox h2{
+    background: #ff5b43;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    /* font-family: 'Raleway'; */
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+}
+.figurecap .captionbox a{
+    background: #ff5b43;
+    font-size: 40px;
+    color: black;
+    /*border: 2px solid black;
+    border-radius: 80%;*/
+    padding: 5px;
+}
+.figurecap .captionbox i{
+    background: #ff5b43;
+}
+.project-detail{
+    background: #ff5b43;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*bottom: 0;*/
+    padding: 20px;
+    padding-top: 5px;
+    transition: all 0.3s;
+}
+.project-detail p{
+    background: #ff5b43;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: 'poppins';
+}
+.tech-stack{
+    background: #ff5b43;
+}
+.tech-stack img{
+    background: #ff5b43;
+}
+.project_card:hover .project-img{
+    opacity: 0.7;
+}
+.project_card:hover .project-img{
+    transform: translateY(-60px);
+}
+.project_card:hover .project-detail{
+    opacity: 1;
+    transform: translateY(-110px);
+}
+.project_card:hover .captionbox{
+    transform: translateY(-100px);
+}
 .personal_info_sec{
     margin: 100px;
 }
