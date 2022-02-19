@@ -580,16 +580,19 @@ h2{
 }
 .project_row_1{
     margin-top: 90px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .project_card{
-    border: 1px solid #333;
+    
     border-radius: 6px;
     width: 35%;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .project-img{
     width: 100%;
@@ -640,6 +643,7 @@ h2{
     /*bottom: 0;*/
     padding: 20px;
     padding-top: 5px;
+    border-radius: 6px;
     transition: all 0.3s;
 }
 .project-detail p{
@@ -667,6 +671,34 @@ h2{
 }
 .project_card:hover .captionbox{
     transform: translateY(-100px);
+}
+.timeline .timeline_item h1{
+    padding-bottom: 18px;
+}
+.timeline .timeline_item .place{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: gold;
+    background-color: #17171B;
+    font-family: 'raleway';
+}
+.timeline_item a{
+    text-decoration: none;
+}
+.timeline_item ul{
+    list-style-type: square;
+    padding-left: 15px;
+    background: #17171B;
+}
+.timeline_item li{
+    background-color: #17171B;
+    font-size: 16px;
+    font-family: 'raleway';
+    color: white;
+}
+.volunteer_sec{
+    margin: 100px;
 }
 .personal_info_sec{
     margin: 100px;
@@ -1104,6 +1136,15 @@ h2{
     .skill-container .skills-info .skill-name i{
         font-size: 28px;
     }
+    .project_card{
+        width: 40%;
+    }
+    .project_card:hover .project-detail{
+        transform: translateY(-120px);
+    }
+    .project_card:hover .captionbox {
+        transform: translateY(-110px);
+    }
     .lower-cards{
         margin-top: 80px;
         justify-content: space-around;
@@ -1228,6 +1269,9 @@ h2{
    .skill-container .skills-info .skill-name i{
        font-size: 25px;
    }
+   .project_card{
+    width: 45%;
+    }
    .lower-cards .per-card{
        width: 75%;
        justify-content: space-around;
@@ -1256,6 +1300,17 @@ h2{
    }
 
 
+}
+@media (max-width:885px){
+    .project_card{
+        width: 75%;
+        }
+    .alter-project{
+        margin-bottom: 50px;
+    }
+    .lower1 .timeline {
+        width: 100%;
+    }
 }
 @media (max-width:768px){
     .my-nav{
@@ -1332,6 +1387,12 @@ h2{
         padding-left: 50px;
         padding-right: 40px;
     }
+    .figurecap .captionbox h2{
+        font-size: 27px;
+    }
+    .figurecap .captionbox a{
+        font-size: 35px;
+    }
     .skill-container .skill-heading{
         font-size: 25px;
     }
@@ -1346,6 +1407,19 @@ h2{
     }
     .skill-container .skills-info .skill-name{
         font-size: 23px;
+    }
+    .work-lower{
+        margin-left: 20px;
+    margin-right: 20px;
+    }
+    .timeline .timeline_item .place{
+        font-size: 16px;
+    }
+    .timeline .timeline_item .year{
+        font-size: 15px;
+    }
+    .timeline_item li{
+        font-size: 15px;
     }
     .lower-cards .per-card{
         width: 95%;
@@ -1505,7 +1579,37 @@ h2{
     .skill-container .skills-info .skill-name i{
         font-size: 23px;
     }
-
+    .project_card{
+        width: 95%;
+        }
+    .figurecap .captionbox h2 {
+        font-size: 22px;
+    }
+    .figurecap .captionbox a {
+         font-size: 30px;
+    }
+    .project-detail p{
+        font-size: 13px;
+    }
+    .tech-stack img{
+        height: 40px;
+    }
+    .work-lower .timeline{
+        padding-left: 40px;
+    padding-right: 30px;
+    }
+    .work-lower .timeline .timeline_item h1{
+        font-size: 23px;
+    }
+    .work-lower .timeline .timeline_item .place{
+        font-size: 15px;
+    }
+    .work-lower .timeline .timeline_item .year{
+        font-size: 14px;
+    }
+    .work-lower .timeline .timeline_item li {
+        font-size: 13px;
+    }
     .lower-cards{
         margin-top: 60px;
     }
