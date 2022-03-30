@@ -36,21 +36,21 @@
     </nav>
     <div id="film" class="navbar_flim">
         <div class="links">
-            <a href="#home" class="link">
+            <a href="#home" class="link" onclick="navController()">
                 <span class="link_anim">Home</span>
             </a>
-            <a href="#about" class="link">
+            <a href="#about" class="link" onclick="navController()">
                 <span class="link_anim">About</span>
             </a>
-            <a href="../about/index.html" class="link">
+            <a href="#skillid" class="link" onclick="navController()">
                 <span class="link_anim">Skills</span>
             </a>
-            <a href="#" class="link">
+            <a href="#projectid" class="link" onclick="navController()">
                 <span class="link_anim">
                     Projects
                 </span>
             </a>
-            <a href="../contact-us/index.html" class="link">
+            <a href="#contactid" class="link" onclick="navController()">
                 <span class="link_anim">Contact</span>
             </a>
         </div>
@@ -229,7 +229,7 @@
     </div>
     <!--animated line divider ended-->
     <!--skills sec started-->
-    <section class="skills_sec alternate-sec">
+    <section class="skills_sec alternate-sec" id="skillid">
         <div class="upper1 skill-id">
             <h1><span class="heading">My</span> Skills</h1>
             <div class="underlines">
@@ -399,7 +399,7 @@
     </div>
     <!--animated line divider ended-->
     <!--projects sec started-->
-    <section class="projects_sec alternate-sec">
+    <section class="projects_sec alternate-sec" id="projectid">
         <div class="upper1">
             <h1><span class="heading">Pro</span>jects</h1>
             <div class="underlines">
@@ -443,6 +443,50 @@
                         <div class="tech-stack">
                             <img src="/assets/html2.svg"></img>
                             <img src="/assets/css svg.svg"></img>
+                        </div>
+                    </div>
+                </figcaption>
+
+
+            </figure>
+        </div>
+        <div class="project_row_1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+            <figure class="project_card alter-project">
+                <img class="project-img" src="/assets/fortmatic.jpg">
+                <figcaption class="figurecap">
+                    <div class="captionbox">
+                        <h2>Fortmatic landing page</h2>
+                        <a href="https://github.com/srijit-ops/Fortmatic_landing_page" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-detail">
+                        <p>A fully responsive landing page clone of Fortmatic.</p>
+                        <div class="tech-stack">
+                            <img src="/assets/html2.svg"></img>
+                            <img src="/assets/css svg.svg"></img>
+                            
+                        </div>
+                    </div>
+                </figcaption>
+
+
+            </figure>
+            <figure class="project_card">
+                <img class="project-img" src="/assets/portfolio.jpg">
+                <figcaption class="figurecap">
+                    <div class="captionbox">
+                        <h2>Portfolio</h2>
+                        <a href="https://github.com/srijit-ops/Portfolio" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="project-detail">
+                        <p>My responsive portfolio website.</p>
+                        <div class="tech-stack">
+                            <img src="/assets/html2.svg"></img>
+                            <img src="/assets/css svg.svg"></img>
+                            <img src="/assets/js.svg"></img>
                         </div>
                     </div>
                 </figcaption>
@@ -611,13 +655,13 @@
     </section>
     <!--testimonial ended-->
     <!--numbering started-->
-    <!--<div class="numbering_container">
-    <span class="numbers">07</span>
-</div>-->
+    <div class="numbering_container">
+    <span class="numbers">08</span>
+</div>
     <!--numbering ended-->
     <!--animated line divider started-->
 
-    <!--<div class="who-am-i">
+    <div class="who-am-i">
     <div class="line">
         <div class="leftgap"></div>
         <div class="line-and-para">
@@ -627,10 +671,10 @@
     </div>
 
 
-</div>-->
+</div>
     <!--animated line divider ended-->
     <!--personal info sec started-->
-    <section class="personal_info_sec alternate-sec">
+    <section class="personal_info_sec alternate-sec" id="contactid">
         <div class="upper1">
             <h1><span class="heading">Personal</span> Details</h1>
             <div class="underlines">
@@ -677,7 +721,7 @@
 
     <!--numbering started-->
     <div class="numbering_container">
-        <span class="numbers">08</span>
+        <span class="numbers">09</span>
     </div>
     <!--numbering ended-->
     <!--animated line divider started-->
@@ -731,7 +775,7 @@
     <!--get in touch sec ended-->
     <!--numbering started-->
     <div class="numbering_container">
-        <span class="numbers">09</span>
+        <span class="numbers">10</span>
     </div>
     <!--numbering ended-->
     <!--animated line divider started-->
