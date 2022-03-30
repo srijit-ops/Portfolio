@@ -10,32 +10,26 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-/*::before
- {
-  position: absolute;
-  content: "";
-  
-}*/
 .my-nav{
     width: 100%;
     position: fixed;
-    
     left: 0;
     right: 0;
-    z-index: 3090;
+    z-index: 5000;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: white;
     padding: 3.5rem 5rem;
     height: 60px;
     background-color: #0d1117;
     opacity: .9;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     backdrop-filter: blur(5px);
 
 }
+
+
 .name{
     font-size: 1.5rem;
     
@@ -85,28 +79,58 @@ body {
     cursor: pointer;
     transition: all 0.3s;
 }
-.my-nav .nav-icon:hover .bars::before{
-    left: 0;
+
+.nav-icon:focus .bars::before{
     width: 50px;
 }
-.my-nav .nav-icon:hover .bars::after{
+.nav-icon:focus .bars::after{
     width: 50px;
 }
-/*.my-nav .nav-icon .bars::before:hover .bars::before{
-    left: 0;
+.bars.bar_open{
+    background: white;
+}
+.bars.bar_open::before{
+    width: 50px;
+    left: 0%;
+}
+.bars.bar_open::after{
     width: 50px;
 }
-.my-nav .nav-icon .bars::before:hover .bars::after{
+.link:hover{
+    color: #0d1117;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ff4d5a;
     
-    width: 50px;
 }
-.my-nav .nav-icon .bars::after:hover .bars::before{
-    left: 0;
-    width: 50px;
+.navbar_flim{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 4500;
+    bottom:99.947%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
 }
-.my-nav .nav-icon .bars::after:hover .bars::after{
-    width: 50px;
-}*/
+.navbar_flim.open{
+    bottom: 0%;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    margin: 20px auto;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: transparent;
+    transition: all 0.3s;
+    opacity: 0;
+}
 .about-main-div{
     width: 100%;
     display: flex;
@@ -801,6 +825,146 @@ h2{
 .testimonial_sec{
     margin: 100px;
 }
+blockquote {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+section.t-bq-section {
+    padding: 30px;
+    margin-bottom: 60px;
+}
+
+.t-bq-wrapper.t-bq-wrapper-boxed {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.t-bq-wrapper.t-bq-wrapper-fullwidth {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+/* ========== 05. Paul ========== */
+
+.t-bq-quote-paul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 250px;
+    
+    border-radius: 10px;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-pattern {
+    flex-basis: 80px;
+    background: #ff4b33;
+    border-radius: 10px 0 0 10px;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-base {
+    flex-basis: calc(100% - 80px);
+    
+    padding: 40px 30px 50px 80px;
+    font-size: 11pt;
+    line-height: 1.62em;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(40, 40, 40, 0.8);
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-qmark {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    font-family: Garamond, Georgia, "Times New Roman", serif;
+    font-size: 48pt;
+    color: #999999;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background: transparent;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-userpic {
+    position: absolute;
+    top: 80px;
+    left: 45px;
+    width: 90px;
+    height: 90px;
+    background: url("assets/internship.jfif") center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 2px dotted #777777;
+    background: transparent;
+}
+.t-bq-quote-paul-meta-info{
+    background: transparent;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author,
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-source {
+    color: #777777;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 11pt;
+    font-weight: bold;
+    background: transparent;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author cite {
+    font-style: normal;
+    background: transparent;
+}
+
+.t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-source {
+    font-size: 10pt;
+    background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-paul .t-bq-quote-paul-pattern {
+        flex-basis: 20px;
+    }
+
+    .t-bq-quote-paul .t-bq-quote-paul-base {
+        flex-basis: calc(100% - 20px);
+        padding: 100px 30px 50px 30px;
+    }
+
+    .t-bq-quote-paul .t-bq-quote-paul-userpic {
+        width: 50px;
+        height: 50px;
+        left: 40px;
+        top: 20px;
+    }
+
+    .t-bq-quote-paul .t-bq-quote-paul-qmark {
+        left: 100px;
+        top: 45px;
+    }
+}
+
 .get_in_touch_sec{
     margin: 100px;
 }
@@ -822,51 +986,7 @@ h2{
     
     position: relative;
 }
-/*.left-col .info{
-    width: 100%;
-    position: relative;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    background-image: url(map2.jpg);
-    opacity: 0.2;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 200px;
-}
-.left-col .info::before{
-    content: "";
-    background-image: url(map2.jpg);
-    opacity: 0.28;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    
-    left: 0px;
-    min-height: 200px;
-}
-.left-col .info h3{
-    color: springgreen;
-    font-size: 23px;
-    margin: 0 0 20px;
-    opacity: 1;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    font-family: "Lemonada", cursive;
-}
-.left-col .info p{
-    color: snow;
-    font-size: 16px;
-    opacity: 1;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    font-family: "Lemonada", cursive;
-}
-.left-col .info .emoji{
-    font-size: 18px;
-}*/
+
 .right-col{
     flex: 0 0 57%;
     max-width: 57%;
@@ -1062,6 +1182,9 @@ h2{
     font-size: 28px;
 }
 @media (max-width: 1200px){
+    .link{
+        font-size: 50px;
+    }
     .about-main-div{
         margin-bottom: 60px;
     }
@@ -1315,6 +1438,12 @@ h2{
     .lower1 .timeline {
         width: 100%;
     }
+    .link{
+        font-size: 50px;
+    }
+    .t-bq-wrapper.t-bq-wrapper-boxed {
+        max-width: 650px;
+    }
 }
 @media (max-width:768px){
     .my-nav{
@@ -1459,6 +1588,30 @@ h2{
     .footer .footer-info{
         font-size: 22px;
     }
+    .link{
+        font-size: 40px;
+    }
+    .t-bq-wrapper.t-bq-wrapper-boxed {
+        max-width: 390px;
+    }
+    .t-bq-quote-paul .t-bq-quote-paul-userpic {
+        width: 60px;
+        height: 60px;
+        left: 45px;
+        top: 20px;
+    }
+    .t-bq-quote-paul .t-bq-quote-paul-qmark {
+        left: 22px;
+        top: 65px;
+    }
+    blockquote{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author{
+        font-size: 10pt;
+    }
+
 
 }
 @media (max-width:480px){
@@ -1674,7 +1827,11 @@ h2{
     .footer .footer-info .love{
         font-size: 18px;
     }
-
-
+    .link{
+        font-size: 30px;
+    }
+    .link:hover{
+        -webkit-text-stroke-width: 1px;
+    }
 
 }
