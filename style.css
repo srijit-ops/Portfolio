@@ -29,7 +29,7 @@ body {
     transition: all 0.3s;
 }
 .my-nav.nav-color{
-    background-color: rgba(40, 40, 40, 1);
+    background-color: rgba(40, 40, 40, 0);
 }
 
 .name{
@@ -701,8 +701,10 @@ h2{
 .project_card:hover .project-img{
     transform: translateY(-60px);
 }
-.project_card:hover .project-detail{
+.project-detail{
     opacity: 1;
+}
+.project_card:hover .project-detail{
     transform: translateY(-110px);
 }
 .project_card:hover .captionbox{
