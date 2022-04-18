@@ -45,6 +45,7 @@ function navController() {
             },1000)
 
             navOpen = false
-        }, 300)
+        }, 300
+    )
     }
 }
