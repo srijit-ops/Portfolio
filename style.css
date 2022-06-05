@@ -1066,7 +1066,7 @@ section.t-bq-section {
     color: white;
     background-color: #ff4b33;
     position: relative;
-    
+    border-radius: 6px;
     transition: 0.2s;
   }
   .right-col  .btn-2 span:hover {
