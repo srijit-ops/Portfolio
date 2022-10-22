@@ -705,7 +705,7 @@ h2{
     opacity: 1;
 }
 .project_card:hover .project-detail{
-    transform: translateY(-110px);
+    transform: translateY(-120px);
 }
 .project_card:hover .captionbox{
     transform: translateY(-100px);
@@ -1191,6 +1191,14 @@ section.t-bq-section {
     color: red; 
     font-size: 28px;
 }
+@media (max-width: 1391px){
+    .project_card:hover .project-detail {
+        transform: translateY(-135px);
+    }
+    .project_card:hover .captionbox {
+        transform: translateY(-110px);
+    }
+}
 @media (max-width: 1200px){
     .link{
         font-size: 50px;
@@ -1277,7 +1285,7 @@ section.t-bq-section {
         width: 40%;
     }
     .project_card:hover .project-detail{
-        transform: translateY(-120px);
+        transform: translateY(-135px);
     }
     .project_card:hover .captionbox {
         transform: translateY(-110px);
@@ -1461,6 +1469,12 @@ section.t-bq-section {
     }
 }
 @media (max-width:768px){
+    .project_card:hover .captionbox {
+        transform: translateY(-140px);
+    }
+    .project_card:hover .project-detail {
+        transform: translateY(-160px);
+    }
     .my-nav{
         padding: 3.5rem 3rem;
     }
